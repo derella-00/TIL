@@ -1,3 +1,25 @@
 # Today I Learned
 
-어이, 쌍화차에 노른자 탱탱한 녀석으로 하나 띄워서!s
+### 01_Linux
+    Linux command
+
+### 02_Docker
+    docker command
+
+### 03_AWS
+    EC2
+    RDS
+    DNS
+    ELB
+    CDN
+### 04_Git
+    markdown
+    git
+
+### 05_Python
+    python guide
+
+### 06_Django
+    django
+
+
