@@ -166,7 +166,6 @@ set1 = {value1, value2, value3}
 |a`.union(b)`|합집합|
 |a`.intersection(b)`|교집합|
 
-### `dictionary`는 아이템이 삽입되는 순서를 가지고 있다
 
 ```python
 set1 = {1, 2, 3}
@@ -206,6 +205,8 @@ list(uniq)    # [1, 2, 3, 4]
 - `value`는 `list`, `dictionary` 를 포함한 모든 것이 가능
 - 리스트는 인덱스가 정해져 있어 순서가 중요하지만, 딕셔너리는 순서가 없다.
 - 중요한 것은 `key` 값으로 `value`를 호출한다는 것
+### `dictionary`는 아이템이 삽입되는 순서를 가지고 있다
+
 ```python
 dict_a = {}    # {}
 dict_b = dict()    # {}
