@@ -446,5 +446,116 @@ while True:
 for num in range(10):
     print(num)
     if num > 0 :
-        print()
+        print('끝')
+        break
+# 0
+# 1
+# 끝
+
+for num in range(10) :
+    if num > 1 :
+        print('끝')
+    print(num)
+# 0
+# 1
+# 끝
+
+```
+
+
+```python
+# 조건문과 반복문, break를 활용하여 리스트에서 쌀이 나왔을 떄 for 문을 멈추는 코드 작성
+
+rice = ['보리', '보리', '보리', '쌀', '보리']
+
+for grain in rice :
+    if grain != "쌀" :
+        print(grain)
+    else :
+        print(grain)
+        print("잡았다!")
+        break
+
+# 코드 비교
+for grain in rice:
+    print(grain)    # 일단 뭐가 나왔는지, 출력은 해야지 그럼 위처럼 else가 필요없겠구나
+    if grain == '쌀':
+        print('잡았다')
+        break
+```
+## `continue`
+continue문은 continue 이후의 코드를 수행하지 않고, `다음 요소부터 계속(continue)`하여 반복을 수행합니다.
+
+```python
+# for문을 통해 0~5까지의 숫자를 반복하며,
+# 짝수인 경우 continue하고,
+# 홀수인 경우 해당 숫자를 출력하는 코드를 작성
+
+nums = range(6)
+
+for num in nums:
+    if num % 2 == 0 :
+        continue
+    print(num)
+
+# 코드 비교
+
+for i in range(6):
+    if i % 2 == 0:
+        continue
+        # continue 이후의 코드는 실행되지 않습니다.
+    print(f'{i}는 홀수다.')
+
+```
+
+```python
+#나이가 입력된 리스트가 있을때, 조건문과 반복문, continue문을 활용하여 20살 이상일때만 "성인입니다"라는 출력을 하는 코드를 작성하시오.
+
+ages = [10, 23, 8, 30, 25, 31]
+
+for age in ages:
+    if age >= 20:
+        print(f'{age}살은 성인입니다.')
+        continue
+
+# continue 를 이용하려면 좀 억지이긴 하지만, 20살 미만이 나왔을 때 continue로 넘겨서 20살 이상만 출력되도록 유도...
+
+
+for age in ages:
+    if age < 20:
+        continue
+    print(f'{age} 살은 성인입니다. \n')
+
+```
+
+## `pass`
+아무 것도 하지 않는다.
+
+## `else`
+끝까지 반복문을 실행한 이후에 실행된다.
+
+반복문이 `break` 문으로 종료될 때는 실행되지 않는다.
+
+```python
+# 'apple' 이라는 문자열을 순회하면서
+# 'b'가 있으면 'b!'를 출력한 후 break에 의해 순회를 종료,
+# 문자열 끝까지 순회해도 'b'가 없는 경우, 'b가 없습니다.'를 출력
+
+for char in 'apple':    # char는 관례
+    if char == 'b' :
+        print('b!')
+        break
+else:
+    print('b가 없습니다.')
+```
+
+```python
+# numbers 리스트에 4가 있을 경우 True를 출력하고, 없을 경우 False를 출력
+
+for number in numbers :
+    if number == 4: 
+        print('True')
+        break
+else :
+    print('False')
 ```
