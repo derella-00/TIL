@@ -82,6 +82,11 @@ for wii in basket_items :
         non_fruits_sum += basket_items[wii]
         
 print(f'과일은 {fruits_sum}개이고, {non_fruits_sum}개는 과일이 아닙니다.')
+
+
+# for key, value in basket_items.items():
+#    if key in fruits:
+#        fruits_sum += value
 ```
 </br>
 
