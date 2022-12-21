@@ -20,6 +20,8 @@
 
 
 ---
+</br>
+
 ### 활용법
 
 ```python
@@ -28,3 +30,28 @@ def <func>(parameter1, parameter2):
     return value
 ```
 
+```python
+# 내장함수 목록 확인
+dir(__builtins__)
+```
+</br>
+
+### 함수의 선언과 호출
+```python
+# 좋은 교보재인듯
+num1 = 0
+num2 = 1
+
+def func1(a, b):
+    return a + b
+    
+def func2(a, b):
+    return a - b
+    
+def func3(a, b):
+    x = 1
+    return func1(a, 5) + func2(5, b)
+
+result = func3(num1, num2)
+print(result)    # 9
+```
